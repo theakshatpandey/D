@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>DSecure</title>
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">"
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body bgcolor="BurlyWood">
+        <div class="container">
+            <div class="navigation">
+                <div class="left">
+                    <div class="nagivation-link">
+                     <div><b>DSecure</b></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="brand active-brand-link">
+                        <a href="index.html"><b>Home</b></a>
+                    </div>
+                    <div class="brand">
+                        <a href="about.html"><b>About</b></a>
+                    </div>
+                    <div class="brand">
+                        <a href="Why DSecure.html"><b>Why DSecure</b></a>
+                    </div>
+                    <div class="brand">
+                        <a href="Our Solutions.html"><b>Our Solutions</b></a>
+                    </div>    
+                    <div class="brand">
+                        <a href="Insights.html"><b>Insights</b></a>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="potfolio-items-wrapper">
+
+                    <div class="potfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio.jpg);">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo wrapper">
+                                <img src="c:\Users\user\OneDrive\Desktop\DSecure\website\11.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Our dedicated SOC learns your environment, co-manages your incident response plan, and works hand-in-hand with you as your trusted partner to stay ahead of emerging threat 24×7.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="potfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio.jpg);">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo wrapper">
+                                <img src="c:\Users\user\OneDrive\Desktop\DSecure\website\5.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                Our open XDR platform covers your entire attack surface with our extensive library of hundreds of data integrations and thousands of threat detections
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="potfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/portfolio.jpg);">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo wrapper">
+                                <img src="c:\Users\user\OneDrive\Desktop\DSecure\website\philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg">
+                            </div>
+
+                            <div class="subtitle">
+                                Our extensible platform gives you the freedom to scale both the breadth and depth of coverage                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+    <script>
+        const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper');
+
+        portfolioitems.forEach(portfolioitem => {
+            console.log(portfolioitem.childNodes[1].classList)
+            portfolioitem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioitem.addEventListener('mouseout', () => {
+            console.log(portfolioitem.childNodes[1].classList)
+            portfolioitem.childNodes[1].classList.remove('image-blur');
+        });
+    
+
+    </script>
+
+</html>
